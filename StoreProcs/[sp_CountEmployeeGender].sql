@@ -9,9 +9,9 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 -- =============================================
--- Author:		<Author,,Name>
--- Create date: <Create Date,,>
--- Description:	<Description,,>
+-- Author:		Siyabonga Mbambo
+-- Create date: 2019-04-05
+-- Description:	Get employee gender count by department name
 -- =============================================
 CREATE PROCEDURE  [dbo].[sp_CountEmployeeGender] 
 
@@ -22,7 +22,7 @@ BEGIN
 
 	SET NOCOUNT ON;
 
-	SELECT COUNT(e.gender), e.gender from Employees e
+	SELECT COUNT(e.gender) AS Count, e.gender from Employees e
 		INNER JOIN Department d on e.departmentID = d.DepartmentID
 		WHERE d.name = @DepartmentName
 		GROUP BY e.gender

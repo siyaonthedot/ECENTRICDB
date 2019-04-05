@@ -9,9 +9,9 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 -- =============================================
--- Author:		<Author,,Name>
--- Create date: <Create Date,,>
--- Description:	<Description,,>
+-- Author:		Siyabonga Mbambo
+-- Create date: 2019-04-05
+-- Description:	Count employees by department
 -- =============================================
 CREATE PROCEDURE  [dbo].[sp_CountEmployeesByDepartment] 
 
