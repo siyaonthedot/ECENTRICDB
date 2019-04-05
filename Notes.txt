@@ -1,0 +1,6 @@
+======================
+1. Create Directory 'C:\Apps\DATA'
+2. Run script dbcreation.sql in CreateDBScript folder
+3. Run script CreateEmpTable.sql in Scrpts folder 
+4. Run ExpandEmpTableLastName.sql in Scrpts folder
+5. Run All stored proc in StoreProcs
